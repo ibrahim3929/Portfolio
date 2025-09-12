@@ -28,20 +28,6 @@ I am a student of **Entrepreneurship & Management at Riga Technical University**
   – Research: *Upstream EV Supply Chain in India – Procurement Risks & Digitalization*  
 
 ---
-
-## 🛠️ Skills  
-- **Data Analysis & Visualization** → Excel, Power BI (DAX), Google (Sheets and Lookerstudio), SQL  
-- **Business Research & Writing** → Academic writing, survey analysis, reporting, Formatting, Documentation  
-- **Entrepreneurship** → Small business operations, strategy, financial analysis  
-
----
-
-## 📊 Featured Projects  
-- **Sales Dashboard – Power BI** → Interactive dashboard from raw sales data.  
-- **Movie Dataset Analysis – Python** → Correlation between budget and revenue.  
-- **Survey Analysis – Excel** → Cleaned 200+ responses, built pivot tables & charts.  
-
----
 ## 🛠️ Tools & Skills  
 
 ### 📊 Data Analysis & Visualization  
@@ -82,6 +68,13 @@ I am a student of **Entrepreneurship & Management at Riga Technical University**
 - Project Management (Research projects, group work, academic deliverables)  
 - Communication & Presentation Skills  
 - Cross-Cultural Collaboration (India, Latvia, Germany, Turkey)  
+
+---
+
+## 📊 Featured Projects  
+- **Sales Dashboard – Power BI** → Interactive dashboard from raw sales data.  
+- **Movie Dataset Analysis – Python** → Correlation between budget and revenue.  
+- **Survey Analysis – Excel** → Cleaned 200+ responses, built pivot tables & charts.  
 
 ---
 
