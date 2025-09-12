@@ -1,25 +1,23 @@
-# 📊 Sales & Profit Dashboard (Power BI)
+# 📊 Returns Analysis Dashboard (Power BI)
 
 ## Problem
-Managers needed insights into cost, profit, and revenue trends across years, regions, and product lines.
+Business wanted to understand the financial impact of product returns on revenue, profit, and customer segments.
 
 ## Dataset
-- Mock data (~5,000+ rows) structured like a real sales system  
-- Columns: Order Date, Customer, Product, Cost, Profit, Revenue  
+- Mock dataset (~10,000+ orders, 2009–2012)  
+- Fields: Order Date, Customer, Product, Sales, Returns, Refunds, Profit  
 ⚠️ Note: Mock data used to protect client confidentiality
 
 ## Approach
-- Built DAX measures (Revenue, Profit Margin, YTD Growth)  
-- Used Power Query for cleaning and transformations  
-- Designed interactive visualizations:  
-  - Revenue vs Profit by Year  
-  - Sold Quantity by City  
-  - Profit by Country & Product  
+- Built KPIs: Refund of Sales, Returned Quantity, Profit Lost to Returns  
+- Created breakdowns by Region, Customer Segment, Product Category  
+- Used DAX measures for “Revenue after Returns” and “Profit after Returns”  
+- Added slicers for Shipping Mode, Province, Product Sub-Category
 
 ## Results
-✅ Automated multi-level reporting  
-✅ Identified top-performing regions & products  
-✅ Reduced manual Excel reporting efforts  
+✅ Identified $2.8M in refunded sales and $324K lost profit  
+✅ Highlighted regions and customer segments with highest returns  
+✅ Gave management visibility into return trends by category & mode
 
 ## Preview
 ![Overview 1](Overview-1.png)  
@@ -28,3 +26,4 @@ Managers needed insights into cost, profit, and revenue trends across years, reg
 
 ## 📄 Full Report
 [![Download Report](https://img.shields.io/badge/PDF-View%20Report-red?logo=adobeacrobatreader)](report.pdf)
+
