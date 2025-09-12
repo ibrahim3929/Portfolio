@@ -22,8 +22,9 @@ Managers needed insights into cost, profit, and revenue trends across years, reg
 ✅ Reduced manual Excel reporting efforts  
 
 ## Preview
-![Overview](assets/overview.png)  
-![Details](assets/detail.png)
+![Overview](overview-1.png)  
+![Overview](overview-2.png)
+![Overview](overview-3.png)
 
 ## 📄 Full Report
-[Download PDF](./report.pdf)
+[Download PDF](report.pdf)
