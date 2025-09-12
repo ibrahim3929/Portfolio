@@ -45,11 +45,11 @@ I am a student of **Entrepreneurship & Management at Riga Technical University**
 
 ## 📬 Contact  
 - **Email:** muhammed004414@gmail.com  
-- **LinkedIn:** https://www.linkedin.com/in/ibrahim-muhamad-liyakath-ali-263a50315/?trk=opento_sprofile_details 
+- **LinkedIn:** [Ibrahim Muhamad Liyakath Ali](https://www.linkedin.com/in/ibrahim-muhamad-liyakath-ali-263a50315/)  
 
+---
 
-
-## 🛠️ Tools & Skills   
--Excel / Power BI/ Power Query / SQL
--Amateur Web designer
+## 🛠️ Tools & Skills  
+- Excel / Power BI / Power Query / SQL  
+- Web Design (Beginner – GitHub Pages & basic front-end)
  
