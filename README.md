@@ -50,6 +50,6 @@ I am a student of **Entrepreneurship & Management at Riga Technical University**
 
 
 ## 🛠️ Tools & Skills   
-Excel / Power BI/ Power Query / SQL
-Amateur Web designer
+-Excel / Power BI/ Power Query / SQL
+-Amateur Web designer
  
