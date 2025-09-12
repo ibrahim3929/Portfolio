@@ -1,0 +1,21 @@
+# 📊 Dashboard (Power BI)
+
+## Problem
+The company needed a clear view of sales across products and regions.
+
+## Dataset
+- 12 months of sales data (~5,000 rows) in Excel
+- Cleaned with Power Query (duplicates removed, missing values fixed)
+
+## Approach
+- Built DAX measures for KPIs: Total Sales, Profit Margin, YTD Growth
+- Created interactive slicers (Region, Product, Month)
+- Added drilldowns for managers to track performance by team
+
+## Results
+✅ Automated reporting — no more manual Excel updates  
+✅ Interactive report easier to view
+
+
+## Preview
+
