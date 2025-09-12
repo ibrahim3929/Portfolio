@@ -51,5 +51,5 @@ I am a student of **Entrepreneurship & Management at Riga Technical University**
 
 ## 🛠️ Tools & Skills  
 - Excel / Power BI / Power Query / SQL  
-- Web Design (Beginner – GitHub Pages & basic front-end)
+- Web Design (Beginner – basic front-end)
  
