@@ -21,4 +21,10 @@ Managers needed insights into cost, profit, and revenue trends across years, reg
 ✅ Identified top-performing regions & products  
 ✅ Reduced manual Excel reporting efforts  
 
+## Preview
+![Overview](Overview.png)
+
+## 📄 Full Report
+[![Download Report](https://img.shields.io/badge/PDF-View%20Report-red?logo=adobeacrobatreader)](Report.pdf)
+
 
