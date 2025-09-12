@@ -71,10 +71,13 @@ I am a student of **Entrepreneurship & Management at Riga Technical University**
 
 ---
 
-## 📊 Featured Projects  
-- **Sales Dashboard – Power BI** → Interactive dashboard from raw sales data.  
-- **Movie Dataset Analysis – Python** → Correlation between budget and revenue.  
-- **Survey Analysis – Excel** → Cleaned 200+ responses, built pivot tables & charts.  
+## 📂 Featured Projects
+
+- **Sales & Profit Dashboard (Power BI)**  
+  → [Case Study](./projects/Sales%20&%20Profit%20Dashboard/README.md)
+
+- **Returns Analysis Dashboard (Power BI)**  
+  → [Case Study](./projects/Returns%20Analysis%20Dashboard/README.md)
 
 ---
 
