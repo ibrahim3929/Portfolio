@@ -4,13 +4,7 @@
 
 **Entrepreneurship & Management Student (RTU, Latvia)** | Data Analyst | Reseacher  
 
-I am a student of **Entrepreneurship & Management at Riga Technical University** with exchange experience in Germany.  
-
-My strengths lie in **data analytics (Excel, Power BI, Python, SQL)**, **business research & writing**, and **website design**.  
-
-I have applied these skills in projects across **India, Latvia, and Germany**, combining analytical insights with clear communication and presentation.  
-
-I am open to **freelance projects and collaborations** where I can turn complex data into accessible insights and design engaging platforms to showcase them.  
+I am a student of **Entrepreneurship & Management at Riga Technical University** with exchange experience in Germany.  My strengths lie in **data analytics (Excel, Power BI, Python, SQL)**, **business research & writing**, and **website design**.  I have applied these skills in projects across **India, Latvia, and Germany**, combining analytical insights with clear communication and presentation.  I am open to **freelance projects and collaborations** where I can turn complex data into accessible insights and design engaging platforms to showcase them.  
 
 
 ---
