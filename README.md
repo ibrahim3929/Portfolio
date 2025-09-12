@@ -1,4 +1,4 @@
-# Data-Analysis-Portfolio
+# Portfolio
 
 # 👋 Hi, I’m Ibrahim  
 
