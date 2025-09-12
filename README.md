@@ -4,13 +4,20 @@
 
 **Entrepreneurship & Management Student (RTU, Latvia)** | Data Analyst | Reseacher  
 
-I combine my studies in **business and management** with hands-on projects in **data analysis, visualization, and report writing**. My work spans India, Latvia, and Germany, blending academic research, freelance work, and entrepreneurial ventures.  
+I am a student of **Entrepreneurship & Management at Riga Technical University** with exchange experience in Germany.  
+
+My strengths lie in **data analytics (Excel, Power BI, Python, SQL)**, **business research & writing**, and **website design**.  
+
+I have applied these skills in projects across **India, Latvia, and Germany**, combining analytical insights with clear communication and presentation.  
+
+I am open to **freelance projects and collaborations** where I can turn complex data into accessible insights and design engaging platforms to showcase them.  
+
 
 ---
 
 ## 🎓 Education  
 - **Riga Technical University (RTU), Latvia** – BSc in Entrepreneurship & Management (2022–2026)  
-- **Heilbronn University, Germany** – Erasmus Exchange, Enterprise Information Systems (2025)  
+- **Heilbronn University, Germany** – Erasmus Exchange (2025)  
 - **High School, Chennai, India** – Graduated 2020  
 
 ---
