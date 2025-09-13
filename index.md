@@ -1,6 +1,4 @@
----
-title: Ibrahim’s Data Analytics Portfolio
-layout: default
+
 ---
 
 # 📊 Data Analytics Portfolio
