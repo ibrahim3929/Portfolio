@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ibrahim — Data Analytics Portfolio</title>
-  <meta name="description" content="Data analytics portfolio: Power BI, Excel, SQL, Python. Projects, research, and contact." />
+  <meta name="description" content="Data analytics portfolio: Power BI, Excel, SQL, Python. Projects, research, contact." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#0b0d10; --panel:#0f141a; --card:#121820; --text:#e8eaed; --muted:#a7b0bb;
       --border:#1e2630; --ring:#3b82f6; --accent:#4cc9f0; --accent2:#22d3ee;
-      --grad1:#0ea5e9; --grad2:#8b5cf6; --link:#93c5fd; --ok:#22c55e;
+      --grad1:#0ea5e9; --grad2:#8b5cf6; --link:#93c5fd;
     }
     @media (prefers-color-scheme: light){
       :root{
@@ -22,23 +22,24 @@
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
     a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+
+    /* Top nav */
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 16px}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .nav a.btn{padding:8px 12px;border:1px solid var(--border);border-radius:12px;background:var(--card);font-weight:600}
+    .nav a.btn:hover{box-shadow:0 6px 16px rgba(0,0,0,.18)}
+
     /* HERO */
     .hero{
-      position:relative;
-      border:1px solid var(--border);
-      background:linear-gradient(120deg, color-mix(in srgb, var(--grad1) 14%, transparent) 0%, transparent 45%),
-                 linear-gradient(300deg, color-mix(in srgb, var(--grad2) 12%, transparent) 0%, transparent 55%),
+      position:relative;border:1px solid var(--border);
+      background:radial-gradient(1200px 600px at 10% -10%, color-mix(in srgb, var(--grad1) 20%, transparent), transparent 60%),
+                 radial-gradient(1200px 600px at 110% 10%, color-mix(in srgb, var(--grad2) 18%, transparent), transparent 60%),
                  var(--panel);
-      border-radius:22px; padding:28px; overflow:hidden;
-      box-shadow:0 20px 40px rgba(0,0,0,.12);
+      border-radius:22px;padding:28px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.12);
     }
     .hero-inner{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}
-    .avatar{
-      width:120px;height:120px;border-radius:20px;border:1px solid var(--border);
-      background:#0a0c10; display:flex;align-items:center;justify-content:center;overflow:hidden;
-      box-shadow:0 10px 20px rgba(0,0,0,.15)
-    }
+    .avatar{width:120px;height:120px;border-radius:20px;border:1px solid var(--border);background:#0a0c10;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,.15)}
     .avatar img{width:100%;height:100%;object-fit:cover}
     h1{font-size:2.1rem;line-height:1.15;margin:0 0 6px;font-weight:800}
     .subtitle{margin:0 0 10px;color:var(--muted);font-weight:600}
@@ -48,26 +49,29 @@
     .cta-row{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
     .btn{
       display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);
-      background:var(--card);color:var(--text);text-decoration:none;font-weight:600;
+      background:var(--card);color:var(--text);text-decoration:none;font-weight:600
     }
     .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b0d10;border-color:transparent}
     .btn:hover{box-shadow:0 6px 16px rgba(0,0,0,.18)}
-    /* SECTIONS */
+
+    /* Sections */
     section{margin-top:22px}
     .section-card{border:1px solid var(--border);border-radius:18px;background:var(--panel);padding:18px}
     h2{font-size:1.35rem;margin:0 0 10px}
     h3{font-size:1.05rem;margin:10px 0 6px}
     ul{margin:6px 0 10px 18px}
     .badges img{height:22px;margin:4px 6px 0 0;vertical-align:middle}
-    /* GRID CARDS */
+
+    /* Project grid */
     .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
     .card h3{margin:2px 0 0}
-    .meta{color:var(--muted);font-size:.9rem}
-    .cta{display:inline-block;margin-top:6px;border:1px solid var(--ring);padding:6px 10px;border-radius:10px}
-    /* FOOTER */
-    footer{color:var(--muted);text-align:center;margin:26px 0 36px}
-    /* SMALL */
+    .meta{color:var(--muted);font-size:.93rem}
+    .cta{display:inline-block;margin-top:8px;border:1px solid var(--ring);padding:8px 12px;border-radius:12px;font-weight:600}
+
+    /* Footer */
+    footer{color:var(--muted);text-align:center;margin:28px 0 36px}
+
     @media (max-width:680px){
       .hero-inner{grid-template-columns:1fr}
       .avatar{width:96px;height:96px}
@@ -78,20 +82,31 @@
 <body>
   <div class="wrap">
 
+    <!-- Top nav -->
+    <nav class="nav" aria-label="Top">
+      <div class="brand">Ibrahim • Data Analytics</div>
+      <div>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#skills">Skills</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </nav>
+
     <!-- HERO -->
     <section class="hero">
       <div class="hero-inner">
         <div class="avatar">
-          <!-- Replace with your picture file path -->
-          <img src="projects/_assets/avatar.jpg" alt="Ibrahim portrait" onerror="this.parentElement.textContent='👤';this.parentElement.style.fontSize='48px'">
+          <!-- Put your photo at this path or change the src -->
+          <img src="projects/_assets/avatar.jpg" alt="Ibrahim portrait" loading="lazy"
+               onerror="this.parentElement.textContent='👤';this.parentElement.style.fontSize='48px'">
         </div>
         <div>
           <h1>Hi, I’m Ibrahim</h1>
           <p class="subtitle">Entrepreneurship &amp; Management Student (RTU, Latvia) • Data Analyst • Researcher</p>
           <p class="intro">
             I study Entrepreneurship &amp; Management at Riga Technical University with exchange experience in Germany.
-            My strengths: data analytics (Excel, Power BI, Python, SQL), business research &amp; writing, and website design.
-            I’ve applied these across India, Latvia, and Germany—turning complex data into clear insights and clean visuals.
+            Core strengths: data analytics (Excel, Power BI, Python, SQL), business research &amp; writing, and website design.
+            I’ve shipped work across India, Latvia, and Germany—turning complex data into clear insights and clean visuals.
             Open to freelance projects and collaborations.
           </p>
           <div class="pills">
@@ -163,15 +178,15 @@
           <h3>Sales &amp; Profit Dashboard (Power BI)</h3>
           <p class="meta">Revenue, margin, discount windows, cohort trends.</p>
           <p>Built DAX measures, drill-throughs, and tooltips; designed executive summary &amp; detail views.</p>
-          <a class="cta" href="projects/Sales%20&%20Profit%20Dashboard/index.md">→ Case Study</a>
+          <!-- IMPORTANT: link to the FOLDER, absolute path, spaces encoded, ampersand escaped -->
+          <a class="cta" href="/Portfolio/projects/Sales%20&amp;%20Profit%20Dashboard/">→ Case Study</a>
         </article>
         <article class="card">
           <h3>Returns Analysis Dashboard (Power BI)</h3>
           <p class="meta">Root-cause by product/region, Pareto, seasonality.</p>
           <p>Modeled return drivers; segmented by SKU/region; added KPI alerts and dynamic filters.</p>
-          <a class="cta" href="projects/Returns%20Analysis%20Dashboard/index.md">→ Case Study</a>
+          <a class="cta" href="/Portfolio/projects/Returns%20Analysis%20Dashboard/">→ Case Study</a>
         </article>
-        <!-- Add more cards as you publish projects -->
       </div>
     </section>
 
@@ -192,7 +207,18 @@
     </footer>
   </div>
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script>
+    // year
+    document.getElementById('y').textContent=new Date().getFullYear();
+    // smooth anchor scroll (small enhancement)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
 </body>
 </html>
 
