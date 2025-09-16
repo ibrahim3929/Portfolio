@@ -1,3 +1,8 @@
+---
+layout: default
+title: Returns Analysis Dashboard (Power BI)
+---
+
 # 📊 Returns Analysis Dashboard (Power BI)
 
 ## Problem
