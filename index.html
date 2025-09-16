@@ -5,129 +5,193 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ibrahim — Data Analytics Portfolio</title>
   <meta name="description" content="Data analytics portfolio: Power BI, Excel, SQL, Python. Projects, research, and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0b0d10; --card:#12161b; --text:#e6e7e9; --muted:#a9b0b6; --accent:#4cc9f0;
-      --link:#89b4fa; --border:#202632;
+      --bg:#0b0d10; --panel:#0f141a; --card:#121820; --text:#e8eaed; --muted:#a7b0bb;
+      --border:#1e2630; --ring:#3b82f6; --accent:#4cc9f0; --accent2:#22d3ee;
+      --grad1:#0ea5e9; --grad2:#8b5cf6; --link:#93c5fd; --ok:#22c55e;
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;}
-    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:940px;margin:40px auto;padding:0 20px}
-    header h1{font-size:2rem;margin:0 0 6px}
-    header p{color:var(--muted);margin:0 0 20px}
-    .badge-row img{height:22px;margin:4px 6px 0 0;vertical-align:middle}
-    section{background:var(--card);border:1px solid var(--border);padding:18px 18px 6px;border-radius:16px;margin:16px 0}
-    h2{font-size:1.3rem;margin:0 0 8px}
-    hr{border:0;border-top:1px dashed var(--border);margin:18px 0}
-    ul{margin:8px 0 12px 20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-    .card{padding:14px;border:1px solid var(--border);border-radius:14px;background:#0f1318}
-    .cta{display:inline-block;margin-top:8px;border:1px solid var(--accent);padding:6px 10px;border-radius:10px}
-    footer{color:var(--muted);text-align:center;margin:22px 0 32px}
-    .pill{display:inline-block;font-size:.8rem;color:var(--muted);border:1px solid var(--border);padding:2px 8px;border-radius:999px;margin:4px 6px 0 0}
     @media (prefers-color-scheme: light){
-      :root{--bg:#f7f8fa;--card:#ffffff;--text:#0c0d0e;--muted:#5b6b76;--border:#e6e8ee;--link:#1d4ed8}
-      .card{background:#fff}
+      :root{
+        --bg:#f6f7fb; --panel:#ffffff; --card:#ffffff; --text:#0f172a; --muted:#4b5563;
+        --border:#e5e7eb; --ring:#2563eb; --accent:#0ea5e9; --accent2:#8b5cf6;
+        --grad1:#60a5fa; --grad2:#a78bfa; --link:#1d4ed8;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    /* HERO */
+    .hero{
+      position:relative;
+      border:1px solid var(--border);
+      background:linear-gradient(120deg, color-mix(in srgb, var(--grad1) 14%, transparent) 0%, transparent 45%),
+                 linear-gradient(300deg, color-mix(in srgb, var(--grad2) 12%, transparent) 0%, transparent 55%),
+                 var(--panel);
+      border-radius:22px; padding:28px; overflow:hidden;
+      box-shadow:0 20px 40px rgba(0,0,0,.12);
+    }
+    .hero-inner{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}
+    .avatar{
+      width:120px;height:120px;border-radius:20px;border:1px solid var(--border);
+      background:#0a0c10; display:flex;align-items:center;justify-content:center;overflow:hidden;
+      box-shadow:0 10px 20px rgba(0,0,0,.15)
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:2.1rem;line-height:1.15;margin:0 0 6px;font-weight:800}
+    .subtitle{margin:0 0 10px;color:var(--muted);font-weight:600}
+    .intro{margin:10px 0 0;max-width:80ch}
+    .pills{margin-top:8px}
+    .pill{display:inline-block;margin:6px 8px 0 0;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:.85rem}
+    .cta-row{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);
+      background:var(--card);color:var(--text);text-decoration:none;font-weight:600;
+    }
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b0d10;border-color:transparent}
+    .btn:hover{box-shadow:0 6px 16px rgba(0,0,0,.18)}
+    /* SECTIONS */
+    section{margin-top:22px}
+    .section-card{border:1px solid var(--border);border-radius:18px;background:var(--panel);padding:18px}
+    h2{font-size:1.35rem;margin:0 0 10px}
+    h3{font-size:1.05rem;margin:10px 0 6px}
+    ul{margin:6px 0 10px 18px}
+    .badges img{height:22px;margin:4px 6px 0 0;vertical-align:middle}
+    /* GRID CARDS */
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px}
+    .card h3{margin:2px 0 0}
+    .meta{color:var(--muted);font-size:.9rem}
+    .cta{display:inline-block;margin-top:6px;border:1px solid var(--ring);padding:6px 10px;border-radius:10px}
+    /* FOOTER */
+    footer{color:var(--muted);text-align:center;margin:26px 0 36px}
+    /* SMALL */
+    @media (max-width:680px){
+      .hero-inner{grid-template-columns:1fr}
+      .avatar{width:96px;height:96px}
+      h1{font-size:1.8rem}
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <h1>📊 Data Analytics Portfolio</h1>
-      <p>Power BI • Excel • SQL • Python • Research &amp; Reports</p>
-      <div class="pill">India · Latvia · Germany</div>
-    </header>
 
-    <section id="experience">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="avatar">
+          <!-- Replace with your picture file path -->
+          <img src="projects/_assets/avatar.jpg" alt="Ibrahim portrait" onerror="this.parentElement.textContent='👤';this.parentElement.style.fontSize='48px'">
+        </div>
+        <div>
+          <h1>Hi, I’m Ibrahim</h1>
+          <p class="subtitle">Entrepreneurship &amp; Management Student (RTU, Latvia) • Data Analyst • Researcher</p>
+          <p class="intro">
+            I study Entrepreneurship &amp; Management at Riga Technical University with exchange experience in Germany.
+            My strengths: data analytics (Excel, Power BI, Python, SQL), business research &amp; writing, and website design.
+            I’ve applied these across India, Latvia, and Germany—turning complex data into clear insights and clean visuals.
+            Open to freelance projects and collaborations.
+          </p>
+          <div class="pills">
+            <span class="pill">India</span><span class="pill">Latvia</span><span class="pill">Germany</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn" href="mailto:muhammed004414@gmail.com">Email Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section-card" id="education">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><b>Riga Technical University (RTU), Latvia</b> — BSc in Entrepreneurship &amp; Management (2022–2026)</li>
+        <li><b>Heilbronn University, Germany</b> — Erasmus Exchange (2025)</li>
+        <li><b>High School, Chennai, India</b> — Graduated 2020</li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section-card" id="experience">
       <h2>💼 Experience</h2>
       <ul>
-        <li><b>Freelance Data Analyst – India &amp; Latvia</b><br>
-          Designed Excel and Power BI dashboards for businesses and student projects.
-          Cleaned survey datasets, built visualizations, and prepared academic-style reports.
-        </li>
-        <li><b>Research Projects – Latvia &amp; Germany</b><br>
-          Research Paper: <i>Assessment of the Impact of Management Style on Enterprise Development in Europe</i><br>
-          Research Paper: <i>How Government Policies Influence Demand &amp; Supply</i><br>
-          Research: <i>Upstream EV Supply Chain in India – Procurement Risks &amp; Digitalization</i>
+        <li><b>Freelance Data Analyst — India &amp; Latvia</b><br>
+          Designed Excel &amp; Power BI dashboards; cleaned survey data; built visuals; wrote academic-style reports.</li>
+        <li><b>Research Projects — Latvia &amp; Germany</b><br>
+          <i>Assessment of the Impact of Management Style on Enterprise Development in Europe</i><br>
+          <i>How Government Policies Influence Demand &amp; Supply</i><br>
+          <i>Upstream EV Supply Chain in India — Procurement Risks &amp; Digitalization</i>
         </li>
       </ul>
     </section>
 
-    <section id="skills">
+    <!-- SKILLS -->
+    <section class="section-card" id="skills">
       <h2>🛠️ Tools &amp; Skills</h2>
-
-      <div class="badge-row" aria-label="Data tools">
+      <div class="badges" aria-label="Data tools">
         <img alt="Excel" src="https://img.shields.io/badge/Excel-217346?logo=microsoft-excel&logoColor=white">
         <img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black">
         <img alt="Google Sheets" src="https://img.shields.io/badge/Google%20Sheets-34A853?logo=googlesheets&logoColor=white">
         <img alt="Looker Studio" src="https://img.shields.io/badge/Looker%20Studio-4285F4?logo=looker&logoColor=white">
-      </div>
-
-      <ul>
-        <li>Excel (Advanced formulas, Pivot Tables, Macros)</li>
-        <li>Power BI (DAX, Power Query, Interactive Dashboards)</li>
-        <li>Google Sheets &amp; Looker Studio</li>
-        <li>SQL (Queries, Joins, Views)</li>
-        <li>Python (Pandas, Matplotlib, Jupyter Notebooks)</li>
-      </ul>
-
-      <hr>
-
-      <h3>📝 Research &amp; Writing</h3>
-      <p>Academic Writing • Report Writing • Survey Design &amp; Analysis • Business &amp; Market Research</p>
-
-      <hr>
-
-      <h3>💻 Technical &amp; Web</h3>
-      <div class="badge-row">
         <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white">
         <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white">
         <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white">
       </div>
       <ul>
-        <li>GitHub &amp; GitHub Pages (Portfolio &amp; Web Hosting)</li>
-        <li>Web Design (Beginner – HTML, CSS)</li>
-        <li>Data Cleaning &amp; Automation (Excel &amp; Python)</li>
+        <li>Excel (advanced formulas, pivots, macros)</li>
+        <li>Power BI (DAX, Power Query, interactive dashboards)</li>
+        <li>SQL (queries, joins, views)</li>
+        <li>Python (Pandas, Matplotlib, notebooks)</li>
+        <li>Web basics (HTML, CSS) • GitHub Pages</li>
       </ul>
-
-      <hr>
-
+      <h3>📝 Research &amp; Writing</h3>
+      <p>Academic writing • Report writing • Survey design &amp; analysis • Market research</p>
       <h3>💼 Business &amp; Management</h3>
-      <p>Entrepreneurship • Strategy • Financial Analysis • Cross-Cultural Collaboration</p>
-      <ul>
-        <li>Project Management (research projects, group work, academic deliverables)</li>
-        <li>Communication &amp; Presentation Skills</li>
-      </ul>
+      <p>Entrepreneurship • Strategy • Financial analysis • Cross-cultural collaboration</p>
     </section>
 
-    <section id="projects">
+    <!-- PROJECTS -->
+    <section class="section-card" id="projects">
       <h2>📂 Featured Projects</h2>
       <div class="grid">
         <article class="card">
           <h3>Sales &amp; Profit Dashboard (Power BI)</h3>
-          <p>Executive snapshot of revenue, margin, discount windows, and cohort trendlines.</p>
+          <p class="meta">Revenue, margin, discount windows, cohort trends.</p>
+          <p>Built DAX measures, drill-throughs, and tooltips; designed executive summary &amp; detail views.</p>
           <a class="cta" href="projects/Sales%20&%20Profit%20Dashboard/README.md">→ Case Study</a>
         </article>
         <article class="card">
           <h3>Returns Analysis Dashboard (Power BI)</h3>
-          <p>Root-cause of returns by product/region, DAX measures, tooltips, and drill-throughs.</p>
+          <p class="meta">Root-cause by product/region, Pareto, seasonality.</p>
+          <p>Modeled return drivers; segmented by SKU/region; added KPI alerts and dynamic filters.</p>
           <a class="cta" href="projects/Returns%20Analysis%20Dashboard/README.md">→ Case Study</a>
         </article>
+        <!-- Add more cards as you publish projects -->
       </div>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT -->
+    <section class="section-card" id="contact">
       <h2>📬 Contact</h2>
       <p><b>Email:</b> <a href="mailto:muhammed004414@gmail.com">muhammed004414@gmail.com</a><br>
          <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/ibrahim-muhamad-liyakath-ali-263a50315/">Ibrahim Muhamad Liyakath Ali</a>
       </p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:muhammed004414@gmail.com">Start a Project</a>
+        <a class="btn" href="#skills">See Skills</a>
+      </div>
     </section>
 
     <footer>
       <small>© <span id="y"></span> Ibrahim — Data Analyst. Built on GitHub Pages.</small>
     </footer>
   </div>
+
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
