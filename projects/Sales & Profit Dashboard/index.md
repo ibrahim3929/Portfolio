@@ -1,3 +1,8 @@
+---
+layout: default
+title: Sales & Profit Dashboard (Power BI)
+---
+
 # 📊 Sales & Profit Dashboard (Power BI)
 
 ## Problem
